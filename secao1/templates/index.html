@@ -9,8 +9,11 @@
     <h2>Integração do HTML com Flask</h2>
     <hr>
     <ol>
-        {%for fruta in frutas%}
-            <li>{{fruta}}</li>
+        {%for aluno, nota in notas.items()%}
+            <details>
+                <summary>{{aluno}}</summary>
+                <p>{{nota}}</p>
+            </details>
         {%endfor%}
     </ol>
 </body>

@@ -7,8 +7,8 @@ app = Flask(__name__)
 # agora é criado uma rota
 @app.route('/')
 def principal():
-    frutas = ["Morango", "Maçã", "Uva", "Laranja"]
-    return render_template("index.html", frutas=frutas)
+    notas = {"Lucas": 9.0, "Lorena": 8.0, "Fatima": 10.0, "leoncio": 10.0} 
+    return render_template("index.html", notas=notas)
 
 @app.route('/sobre')
 def sobre():
