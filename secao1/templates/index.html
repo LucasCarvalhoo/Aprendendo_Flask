@@ -9,12 +9,16 @@
     <h2>Integração do HTML com Flask</h2>
     <hr>
     <ol>
-        {%for aluno, nota in notas.items()%}
-            <details>
-                <summary>{{aluno}}</summary>
-                <p>{{nota}}</p>
-            </details>
+        {%for fruta in frutas%}
+            <li>{{fruta}}</li>
         {%endfor%}
+        <form action="{{url_for('principal')}}" method="POST">
+        <form action="{{url_for('principal')}}" method="DELETE">
+            <label>Frutas</label>
+            <input type="text", name="fruta">
+            <button>adicionar</button>
+            <button>deletar</button>
+        </form>
     </ol>
 </body>
 </html>
