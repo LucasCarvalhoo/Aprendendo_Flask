@@ -13,11 +13,9 @@
             <li>{{fruta}}</li>
         {%endfor%}
         <form action="{{url_for('principal')}}" method="POST">
-        <form action="{{url_for('principal')}}" method="DELETE">
             <label>Frutas</label>
             <input type="text", name="fruta">
             <button>adicionar</button>
-            <button>deletar</button>
         </form>
     </ol>
 </body>
